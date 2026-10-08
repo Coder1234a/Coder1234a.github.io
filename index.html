@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anikeit Agarwal</title>
+<meta name="description" content="Anikeit Agarwal, CSE student at VIT Vellore. Projects: Sahi Daam, NightIT, Misrule, ThaliMetrics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EEF2F7; --ink:#14213D; --muted:#56627A; --rule:#C9D3E0; --marker:#FFD43B; --card:#F8FAFD;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --paper:#121A2B; --ink:#E8EDF5; --muted:#9AA6BC; --rule:#2B3750; --marker:#C9A227; --card:#17213A; }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Schibsted Grotesk",system-ui,sans-serif;font-size:17px;line-height:1.55;
+  background-image:linear-gradient(var(--rule) 1px,transparent 1px);background-size:100% 28px;background-attachment:fixed}
+main{max-width:760px;margin:0 auto;padding:72px 20px 96px;background:var(--paper)}
+a{color:inherit;text-decoration-thickness:2px;text-underline-offset:3px;text-decoration-color:var(--marker)}
+a:hover,a:focus-visible{background:var(--marker);color:#14213D;outline:none}
+a:focus-visible{box-shadow:0 0 0 3px var(--ink)}
+h1{font-weight:900;font-size:clamp(48px,11vw,104px);line-height:.92;letter-spacing:-.03em;margin:0 0 28px}
+h1 .l{display:inline-block}
+.lede{font-size:21px;max-width:34em;margin:0 0 12px}
+.small{color:var(--muted);font-size:15px}
+h2{font-size:15px;font-weight:700;color:var(--muted);margin:72px 0 8px;border-bottom:2px solid var(--ink);padding-bottom:6px}
+.proj{padding:28px 0;border-bottom:1px solid var(--rule)}
+.proj h3{font-size:30px;font-weight:700;letter-spacing:-.01em;margin:0}
+.proj .what{font-size:19px;margin:4px 0 12px}
+.proj p{margin:0 0 10px;max-width:40em}
+.proj .meta{color:var(--muted);font-size:15px}
+.links{display:flex;gap:18px;margin-top:6px;font-weight:500}
+ul.plain{list-style:none;padding:0;margin:0}
+ul.plain li{padding:12px 0;border-bottom:1px solid var(--rule)}
+ul.plain b{font-weight:700}
+.contact{display:flex;flex-wrap:wrap;gap:22px;font-weight:500;font-size:19px;margin-top:12px}
+footer{margin-top:64px}
+@media (prefers-reduced-motion: no-preference){
+  h1 .l{animation:drop .7s cubic-bezier(.3,1.5,.5,1) both}
+}
+@keyframes drop{from{transform:translateY(-120px);opacity:0}to{transform:none;opacity:1}}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1 id="name" aria-label="Anikeit Agarwal">Anikeit<br>Agarwal</h1>
+  <p class="lede">I'm a first-year computer science student at VIT Vellore. I build software for problems I can see around me: hostel food queues, mess food waste, and checking whether a shop's weighing scale is certified.</p>
+  <p class="small">B.Tech CSE (AI &amp; Data Engineering), 2026–2030. Member of the Institution's Innovation Council, startup domain.</p>
+</header>
+
+<h2>Projects</h2>
+
+<article class="proj">
+  <h3>Sahi Daam</h3>
+  <div class="what">Verify a weighing instrument's certificate by scanning its QR code.</div>
+  <p>Built for Smart India Hackathon 2026 (problem SIH26036, Department of Consumer Affairs) with team VITV SahiDaam; we cleared VIT's internal round. I led the backend, the database and frontend integration.</p>
+  <p>Each certificate is signed with Ed25519, so an edited record shows as not verified, and an offline checker works with no network. Officers, traders, labs and admins each get their own view across eight States, with fraud checks at issue time and a tamper-evident audit log.</p>
+  <div class="meta">Python, Flask, SQLAlchemy, PostgreSQL, Render</div>
+  <div class="links"><a href="https://github.com/icebergabhay1111-a11y/legal-metrology-certificate-verification">Source code</a></div>
+</article>
+
+<article class="proj">
+  <h3>NightIT</h3>
+  <div class="what">Order from the hostel night mess and watch your place in the queue.</div>
+  <p>Built at Hackulus '26. Paper bills were the only proof of purchase, so a lost bill meant lost food. NightIT replaces them with a one-time six-digit pickup code tied to your registration number, and shows your live position from your room.</p>
+  <p>I built the backend and data layer: a 19-route API, wait times based on the slowest item in a cart, stock limits, cut-off times and UPI payments.</p>
+  <div class="meta">React, Node.js, Express, PostgreSQL, Razorpay</div>
+  <div class="links"><a href="https://github.com/Coder1234a/NightIT">Source code</a></div>
+</article>
+
+<article class="proj">
+  <h3>Misrule</h3>
+  <div class="what">A platformer where every level secretly changes one law of physics.</div>
+  <p>Built at Code2Create 7.0 with team Hackforgers. Gravity might flip, controls might mirror, time might only pass when you move. You work out which rule is in play, and your score depends on how early you could have known.</p>
+  <div class="meta">JavaScript, no dependencies, works offline</div>
+  <div class="links"><a href="https://coder1234a.github.io/misrule/">Play it</a><a href="https://github.com/Coder1234a/misrule">Source code</a></div>
+</article>
+
+<article class="proj">
+  <h3>ThaliMetrics</h3>
+  <div class="what">Log what you left on your plate; see what your diet is missing.</div>
+  <p>Built at NutriHack, Nutrition Week 2026. One log at the tray return tells a student which nutrients they're short on, and tells the mess which dishes are wasted most. Nutrition values come from FSSAI and ICMR-NIN data.</p>
+  <div class="meta">HTML, CSS, JavaScript</div>
+  <div class="links"><a href="https://coder1234a.github.io/ThaliMetrics/">Try the demo</a><a href="https://github.com/Coder1234a/ThaliMetrics">Source code</a></div>
+</article>
+
+<h2>Experience</h2>
+<ul class="plain">
+  <li><b>Institution's Innovation Council, VIT</b>, member of the startup domain since October 2026. Organising startup events for the council and for VIT Innovation Week, January 2027.</li>
+  <li><b>Supros</b>, research intern in astrophysics, May to June 2025.</li>
+  <li><b>Lakshmipat Singhania Academy</b>, elected Deputy Head Boy, and event coordinator for the school's AI and tech fest, Exebit 2024.</li>
+</ul>
+
+<h2>Hackathons and awards</h2>
+<ul class="plain">
+  <li>Smart India Hackathon 2026, cleared VIT internal round. Also Hackulus '26, Code2Create 7.0, NutriHack and ForkThis '26 in my first semester.</li>
+  <li>IYMC Mathematica 2025: gold medal in the individual contest and champion in the team contest.</li>
+</ul>
+
+<h2>Contact</h2>
+<div class="contact">
+  <a href="mailto:anikeit.8garwal@gmail.com">anikeit.8garwal@gmail.com</a>
+  <a href="https://www.linkedin.com/in/anikeit-agarwal-b038bb320/">LinkedIn</a>
+  <a href="https://github.com/Coder1234a">GitHub</a>
+</div>
+
+<footer class="small">Open to internships with startups.</footer>
+</main>
+<script>
+// Splits the name into letters so each one can drop into place on load
+(function(){
+  var h=document.getElementById('name');
+  var parts=h.innerHTML.split('<br>');
+  var out=[]; var i=0;
+  parts.forEach(function(word){
+    var s='';
+    for(var c of word){ s+='<span class="l" aria-hidden="true" style="animation-delay:'+(i*45)+'ms">'+c+'</span>'; i++; }
+    out.push(s);
+  });
+  h.innerHTML=out.join('<br>');
+})();
+</script>
+</body>
+</html>
